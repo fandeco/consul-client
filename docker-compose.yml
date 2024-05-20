@@ -6,6 +6,7 @@ services:
     command: >-
       agent
       -config-file=/mnt/data/consul.json
+    restart: always
     secrets:
       - CONSUL_KV_TOKEN
       - CONSUL_KV_URL
